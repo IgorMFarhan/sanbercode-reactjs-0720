@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    form table {
+      width: 100%;
+    }
+
+    form table tr td:first-child {
+      width: 150px;
+      font-weight: 600;
+      vertical-align: bottom;
+    }
+
+    form table input {
+      margin-bottom: 5px;
+    }
+
+    form table textarea {
+      font-family: sans-serif;
+      width: 98%;
+      padding: 5px;
+      box-sizing: border-box;
+      outline: none;
+      resize: vertical;
+    }
+
+    .button1 {border-radius: 12px;}
+
+    div {
+      width: 30%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+    <div>
+    <h1>Form Pembelian Buah</h1>
+    <form action="">
+      <table>
+        <tr>
+          <td>Nama Pelangan</td>
+          <td><input type="text" required style="outline: none; width: 200px;">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Daftar Item</td>
+          <td>
+            <input type="checkbox" required name="jeniskelamin" id="lakilaki" required>
+            <label for="lakilaki">Semangka</label>
+            <br>
+            <input type="checkbox" required name="jeniskelamin" id="perempuan" required>
+            <label for="perempuan">Jeruk</label>
+            <br>
+            <input type="checkbox" required name="jeniskelamin" id="perempuan" required>
+            <label for="perempuan">Nanas</label>
+            <br>
+            <input type="checkbox" required name="jeniskelamin" id="perempuan" required>
+            <label for="perempuan">Salak</label>
+            <br>
+            <input type="checkbox" required name="jeniskelamin" id="perempuan" required>
+            <label for="perempuan">Anggur</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input class="button button1" type="submit" value="Kirim">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+
+</html>
