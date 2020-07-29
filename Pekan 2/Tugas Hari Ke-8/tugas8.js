@@ -56,12 +56,8 @@ class Komik extends Book {
     }
 
     callKomik(){
-        var book = {
-            name : this.name,
-            totalPage : this.totalPage,
-            price : this.price,
-            isColorful : this.isColorful,
-        }
+        var book = this.callBook()
+        book.isColorful = this.isColorful
         return book
     }
 }
